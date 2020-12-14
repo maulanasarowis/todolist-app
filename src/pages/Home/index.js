@@ -70,7 +70,7 @@ export default class Home extends Component {
     return (
       <View style={styles.page}>
         <View style={styles.header}>
-          <Text style={styles.title}>Daftar yang ingin dikerjakan</Text>
+          <Text style={styles.title}>List yang ingin dikerjakan</Text>
           <View style={styles.garis} />
         </View>
 
@@ -80,7 +80,7 @@ export default class Home extends Component {
             color={'gray'}
             size={18}
             style={styles.icon}></FontAwesomeIcon>
-          <TextInput placeholder="cari list ..."></TextInput>
+          <TextInput placeholder="Cari list ..."></TextInput>
         </View>
 
         <ScrollView>
@@ -126,6 +126,7 @@ const styles = StyleSheet.create({
   },
   search: {
     flexDirection: 'row',
+    borderRadius: 5,
     marginTop: 8,
     backgroundColor: 'white',
     height: 40,

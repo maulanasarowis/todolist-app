@@ -1,4 +1,4 @@
-import {faEdit, faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faEdit, faTrash} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
@@ -17,9 +17,9 @@ const CardList = ({id, todoItem, navigation, removeData}) => {
           onPress={() => navigation.navigate('EditList', {id: id})}
         />
         <FontAwesomeIcon
-          icon={faTimes}
+          icon={faTrash}
           color={'#e74c3c'}
-          size={25}
+          size={20}
           onPress={() => removeData(id)}
         />
       </View>
